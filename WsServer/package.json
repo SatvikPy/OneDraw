@@ -1,16 +1,21 @@
 {
   "name": "wsserver",
   "version": "1.0.0",
-  "description": "",
+  "description": "OneDraw Real-Time WebSocket Server",
   "main": "index.js",
+  "author": "Satvik Sharma (SatvikPy)",
+  "license": "MIT",
   "scripts": {
     "build": "npx prisma generate --schema=./prisma/schema.prisma && tsc -b .",
     "start": "node dist/index.js",
     "dev": "npm run build && npm run start"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "websocket",
+    "realtime",
+    "canvas",
+    "collaboration"
+  ],
   "dependencies": {
     "@prisma/client": "^6.3.1",
     "@types/ws": "^8.5.14",

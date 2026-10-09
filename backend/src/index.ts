@@ -13,7 +13,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(cors({
     credentials: true,
-    origin: ["https://monitordevices.vercel.app", "http://localhost:3000" , (process.env.FRONTEND_URL  || 'http://0.0.0.0:3000')],
+    origin: ["http://localhost:3000", (process.env.FRONTEND_URL || 'http://0.0.0.0:3000')],
     allowedHeaders: ["Content-Type", "authorization"],
 }));
 const prisma = new PrismaClient();

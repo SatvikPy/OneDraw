@@ -2,7 +2,8 @@
   "name": "onedraw",
   "version": "1.0.0",
   "private": true,
-  "description": "OneDraw - Collaborative Designing Tool",
+  "description": "OneDraw - Collaborative Real-Time Designing & Whiteboard Platform",
+  "author": "Satvik Sharma (SatvikPy)",
   "scripts": {
     "dev:backend": "npm --prefix backend run dev",
     "dev:ws": "npm --prefix WsServer run dev",

@@ -235,15 +235,22 @@ export default function Home() {
                     Redefining collaborative design through innovation, precision, and seamless teamwork.
                   </p>
                   <div className="flex space-x-4">
-                    {['Tw', 'Gh', 'Li'].map((social) => (
-                        <a
-                            key={social}
-                            href="#"
-                            className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-all duration-300 hover:scale-110 border border-white/20 font-bold text-sm"
-                        >
-                          {social}
-                        </a>
-                    ))}
+                    <a
+                        href="https://github.com/SatvikPy/OneDraw"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-all duration-300 hover:scale-110 border border-white/20 font-bold text-sm"
+                    >
+                      Gh
+                    </a>
+                    <a
+                        href="https://github.com/SatvikPy"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-all duration-300 hover:scale-110 border border-white/20 font-bold text-sm"
+                    >
+                      Dev
+                    </a>
                   </div>
                 </div>
 
@@ -272,7 +279,7 @@ export default function Home() {
 
               <div className="border-t border-white/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center">
                 <p className="text-gray-500 mb-4 md:mb-0 font-medium">
-                  &copy; 2025 OneDraw. All rights reserved.
+                  &copy; {new Date().getFullYear()} OneDraw by Satvik Sharma. All rights reserved.
                 </p>
                 <div className="flex space-x-8 text-sm">
                   {['Privacy Policy', 'Terms of Service', 'Cookie Settings'].map((link) => (

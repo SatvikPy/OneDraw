@@ -2,6 +2,8 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "description": "OneDraw Frontend - Collaborative Whiteboard & Vector Design Tool",
+  "author": "Satvik Sharma (SatvikPy)",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",

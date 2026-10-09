@@ -270,9 +270,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support & Contact
 
-- **GitHub Issues** - [Report bugs and feature requests](https://github.com/Hemant2335/OneDraw/issues)
-- **Discussions** - [Join community discussions](https://github.com/Hemant2335/OneDraw/discussions)
-- **Author** - [@Hemant2335](https://github.com/Hemant2335)
+- **GitHub Issues** - [Report bugs and feature requests](https://github.com/SatvikPy/OneDraw/issues)
+- **Discussions** - [Join community discussions](https://github.com/SatvikPy/OneDraw/discussions)
+- **Author** - [Satvik Sharma (@SatvikPy)](https://github.com/SatvikPy)
+- **Email** - [satviksharma.bpl@gmail.com](mailto:satviksharma.bpl@gmail.com)
 
 ## 🗺️ Roadmap
 
@@ -296,6 +297,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Made with ❤️ by the OneDraw team**
+**Made with ❤️ by Satvik Sharma**
 
 *OneDraw - Where ideas come to life through collaboration*
