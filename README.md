@@ -1,302 +1,291 @@
-# OneDraw 🎨
+<div align="center">
 
-> A Modern Collaborative Designing Tool
+# 🎨 OneDraw
 
-**OneDraw** is a powerful, web-based collaborative designing tool that enables multiple users to create, edit, and design together in real-time. Built with modern web technologies, it provides an intuitive interface for teams, educators, and creative professionals to collaborate seamlessly on visual projects.
+### *Next-Gen Real-Time Collaborative Whiteboard & Vector Design Engine*
 
-## 🌟 Features
+[![Author](https://img.shields.io/badge/Author-Satvik%20Sharma-blue.svg?style=for-the-badge&logo=github)](https://github.com/SatvikPy)
+[![GitHub stars](https://img.shields.io/github/stars/SatvikPy/OneDraw?style=for-the-badge&color=gold)](https://github.com/SatvikPy/OneDraw/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
+[![Next.js](https://img.shields.io/badge/Next.js-15.1-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19.0-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-20+-339933?style=for-the-badge&logo=node.js)](https://nodejs.org/)
+[![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748?style=for-the-badge&logo=prisma)](https://www.prisma.io/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 
-### Core Functionality
-- **Real-time Collaboration** - Multiple users can draw and design simultaneously
-- **Vector-based Drawing** - Scalable graphics using modern web standards
-- **Comprehensive Design Tools** - Complete toolkit for creating professional designs
-- **Live User Presence** - See who's online and track real-time cursors
-- **Project Management** - Save, load, and organize your design projects
-- **Cross-platform** - Works seamlessly across all modern web browsers
-
-### Design Tools
-- 🖊️ **Freehand Drawing** - Pen and brush tools with pressure sensitivity
-- 📐 **Shape Tools** - Rectangles, circles, lines, arrows, and custom shapes
-- 📝 **Text Editor** - Rich text editing with typography controls
-- 🎨 **Color Management** - Advanced color palettes and picker
-- 📚 **Layer System** - Organize elements with professional layer management
-- ↩️ **Undo/Redo** - Full history tracking for all operations
-
-### Collaboration Features
-- 👥 **Multi-user Editing** - Simultaneous editing without conflicts
-- 💬 **Real-time Communication** - Built-in chat and commenting system
-- 🔐 **Access Control** - Granular permissions and sharing options
-- 👀 **Live Cursors** - See other users' cursors and selections in real-time
-- 🔄 **Conflict Resolution** - Smart handling of simultaneous edits
-
-## 🏗️ Technical Architecture
-
-### Frontend Stack
-```
-React 18+ with TypeScript
-├── 19 TSX Components - React UI components
-├── 14 TS Modules - Business logic and utilities
-├── 5 JS Files - Additional functionality
-└── Modern CSS - Responsive and accessible styling
-```
-
-### Backend Infrastructure
-```
-Node.js + TypeScript
-├── Prisma ORM - Type-safe database operations
-├── SQL Database - Persistent data storage
-├── WebSocket Server - Real-time communication
-└── REST/GraphQL APIs - Frontend-backend communication
-```
-
-### Key Technologies
-- **Frontend**: React, TypeScript, Modern CSS, Canvas/SVG
-- **Backend**: Node.js, Prisma ORM, WebSockets
-- **Database**: SQL with Prisma migrations
-- **Build Tools**: Modern bundling and optimization
-- **Development**: Hot reload, TypeScript checking, ESLint
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js (v16 or higher)
-- npm or yarn package manager
-- Modern web browser
-- Git
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/SatvikPy/OneDraw.git
-   cd OneDraw
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-
-3. **Set up the database**
-   ```bash
-   npx prisma generate
-   npx prisma db push
-   ```
-
-4. **Configure environment variables**
-   ```bash
-   cp .env.example .env
-   # Edit .env with your configuration
-   ```
-
-5. **Start the development server**
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
-
-6. **Access the application**
-   ```
-   Open http://localhost:3000 in your browser
-   ```
-
-## 📁 Project Structure
-
-```
-OneDraw/
-├── src/
-│   ├── components/          # React components (TSX)
-│   │   ├── Canvas/         # Drawing canvas components
-│   │   ├── Tools/          # Design tool components
-│   │   ├── UI/             # Interface components
-│   │   └── Collaboration/  # Real-time features
-│   ├── hooks/              # Custom React hooks
-│   ├── utils/              # Utility functions
-│   ├── types/              # TypeScript type definitions
-│   ├── services/           # API and business logic
-│   └── styles/             # CSS and styling
-├── prisma/
-│   ├── schema.prisma       # Database schema
-│   └── migrations/         # Database migrations
-├── public/                 # Static assets
-├── docs/                   # Documentation
-└── tests/                  # Test suites
-```
-
-## 🎯 Use Cases
-
-### Professional Teams
-- **Design Collaboration** - Teams working on visual projects
-- **Brainstorming Sessions** - Visual ideation and planning
-- **Prototyping** - Quick mockups and wireframes
-- **Client Presentations** - Interactive design reviews
-
-### Educational
-- **Teaching Tool** - Visual learning and instruction
-- **Student Projects** - Collaborative assignments
-- **Workshops** - Interactive design sessions
-- **Remote Learning** - Online collaborative exercises
-
-### Creative Projects
-- **Artistic Collaboration** - Multi-artist creative projects
-- **Community Art** - Open collaborative artworks
-- **Design Challenges** - Competitive design events
-- **Personal Projects** - Individual creative expression
-
-## 🔧 Configuration
-
-### Environment Variables
-```env
-# Database
-DATABASE_URL="your-database-connection-string"
-
-# Authentication
-JWT_SECRET="your-jwt-secret"
-AUTH_PROVIDER="your-auth-provider"
-
-# Real-time Features
-WEBSOCKET_PORT=3001
-REDIS_URL="your-redis-connection"
-
-# File Storage
-STORAGE_PROVIDER="local|aws|gcp"
-STORAGE_PATH="/uploads"
-```
-
-### Customization Options
-- **Theme Configuration** - Custom colors and styling
-- **Tool Presets** - Default tool configurations
-- **Collaboration Settings** - User limits and permissions
-- **Performance Settings** - Optimization parameters
-
-## 🚀 Deployment
-
-### Production Build
-```bash
-npm run build
-npm run start
-```
-
-### Docker Deployment
-```bash
-docker build -t onedraw .
-docker run -p 3000:3000 onedraw
-```
-
-### Cloud Platforms
-- **Vercel**: One-click deployment with automatic scaling
-- **Netlify**: Static site deployment with serverless functions
-- **AWS/GCP**: Full infrastructure deployment
-- **Docker**: Containerized deployment anywhere
-
-## 🧪 Development
-
-### Running Tests
-```bash
-npm run test              # Run all tests
-npm run test:unit         # Unit tests only
-npm run test:integration  # Integration tests
-npm run test:e2e          # End-to-end tests
-```
-
-### Code Quality
-```bash
-npm run lint              # ESLint checking
-npm run type-check        # TypeScript validation
-npm run format            # Prettier formatting
-```
-
-### Database Operations
-```bash
-npx prisma studio         # Database GUI
-npx prisma migrate dev    # Create migration
-npx prisma db seed        # Seed database
-```
-
-## 📊 Performance Features
-
-### Optimization Strategies
-- **Efficient Rendering** - Optimized canvas operations and updates
-- **State Management** - Minimized re-renders and memory usage
-- **Network Optimization** - Compressed real-time updates
-- **Caching** - Intelligent caching for faster loading
-- **Code Splitting** - Lazy loading for optimal bundle size
-
-### Scalability
-- **Horizontal Scaling** - Multi-server deployment support
-- **Database Optimization** - Efficient queries and indexing
-- **CDN Integration** - Global asset distribution
-- **Load Balancing** - Traffic distribution across servers
-
-## 🤝 Contributing
-
-We welcome contributions from the community! Here's how you can help:
-
-### Getting Involved
-1. **Fork the repository**
-2. **Create a feature branch** (`git checkout -b feature/amazing-feature`)
-3. **Make your changes** with proper tests
-4. **Commit your changes** (`git commit -m 'Add amazing feature'`)
-5. **Push to the branch** (`git push origin feature/amazing-feature`)
-6. **Open a Pull Request**
-
-### Contribution Guidelines
-- Follow the existing code style and conventions
-- Write comprehensive tests for new features
-- Update documentation for any API changes
-- Ensure all tests pass before submitting
-- Be respectful and constructive in discussions
-
-### Areas for Contribution
-- 🐛 **Bug Fixes** - Help resolve issues and improve stability
-- ✨ **New Features** - Add exciting new functionality
-- 📖 **Documentation** - Improve guides and API docs
-- 🎨 **UI/UX** - Enhance the user experience
-- ⚡ **Performance** - Optimize speed and efficiency
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **React Team** - For the amazing React framework
-- **Prisma Team** - For the excellent ORM and database tools
-- **TypeScript Team** - For type safety and developer experience
-- **Open Source Community** - For inspiration and contributions
-
-## 📞 Support & Contact
-
-- **GitHub Issues** - [Report bugs and feature requests](https://github.com/SatvikPy/OneDraw/issues)
-- **Discussions** - [Join community discussions](https://github.com/SatvikPy/OneDraw/discussions)
-- **Author** - [Satvik Sharma (@SatvikPy)](https://github.com/SatvikPy)
-- **Email** - [satviksharma.bpl@gmail.com](mailto:satviksharma.bpl@gmail.com)
-
-## 🗺️ Roadmap
-
-### Version 1.0 (Current)
-- ✅ Basic drawing tools and canvas
-- ✅ Real-time collaboration
-- ✅ User authentication
-- ✅ Project management
-
-### Version 1.1 (Upcoming)
-- 🔄 Advanced shape tools
-- 🔄 Enhanced text editing
-- 🔄 Mobile responsiveness
-- 🔄 Performance optimizations
-
-### Version 2.0 (Future)
-- 📅 Plugin system
-- 📅 Advanced animation tools
-- 📅 AI-powered features
-- 📅 Enterprise features
+[**Explore Demo**](http://localhost:3000) • [**Report Bug**](https://github.com/SatvikPy/OneDraw/issues) • [**Request Feature**](https://github.com/SatvikPy/OneDraw/issues) • [**Connect on GitHub**](https://github.com/SatvikPy)
 
 ---
 
-**Made with ❤️ by Satvik Sharma**
+</div>
 
-*OneDraw - Where ideas come to life through collaboration*
+## 📖 Overview
+
+**OneDraw** is a high-performance, real-time collaborative whiteboard and vector designing suite designed for seamless visual brainstorming, architectural diagramming, prototyping, and team sketching. 
+
+Engineered with a **Next.js 15 App Router** frontend, a **Node.js/Express REST API**, and a dedicated **high-throughput WebSocket server**, OneDraw enables ultra-low-latency real-time multi-user interaction with live cursor synchronization, shape locking, and persistent state management.
+
+---
+
+## ✨ Key Features
+
+### 🖌️ Creative Toolkit
+- **Vector & Freehand Drawing**: Smooth brush, pen, pencil, rectangle, circle/ellipse, line, and arrow tools.
+- **Custom Styling & Palettes**: Dynamic color picker, hex presets, custom stroke widths, opacity, and fill options.
+- **Shape Manipulation & Dragging**: Move, resize, and reposition canvas elements seamlessly.
+- **Undo / Redo History**: Complete state history tracking for uninterrupted creative flow.
+
+### ⚡ Real-Time Collaboration
+- **Sub-millisecond WebSocket Sync**: Real-time broadcast of drawing actions across all connected clients.
+- **Live User Presence & Cursors**: See collaborators' names, live cursor pointers, and hover focus in real-time.
+- **Shape Locking & Conflict Resolution**: Automatic temporal locking mechanism (`lockedBy`, `lockExpire`) prevents conflicting simultaneous edits on the same vector element.
+- **Instant Room Generation & Sharing**: Shareable room links with one-click clipboard copy.
+
+### 🔐 Security & Persistence
+- **JWT-Based Authentication**: Secure sign-up, sign-in, and token-verified WebSocket handshakes.
+- **Type-Safe ORM Persistence**: Powered by Prisma ORM supporting SQLite for effortless local dev and PostgreSQL for production scale.
+- **Zod Data Validation**: Robust schema validation on all incoming API payloads.
+
+---
+
+## 🏗️ System Architecture
+
+```mermaid
+flowchart TD
+    subgraph Client["Frontend Client (Next.js 15 + React 19)"]
+        UI["UI Layer / Toolbar / Navbar"]
+        Canvas["HTML5 Canvas / DrawHandler"]
+        WSClient["SignalingManager (WebSocket Client)"]
+        State["Jotai & React State"]
+    end
+
+    subgraph BackendAPI["Backend REST Service (:5000)"]
+        Express["Express.js Server"]
+        AuthMiddleware["JWT Middleware"]
+        AuthRoute["/backend/signIn & /signUp"]
+        RoomRoute["/backend/createRoom & /getRoom"]
+        ShapeRoute["/backend/getMessages & /checkIfLocked"]
+    end
+
+    subgraph RealtimeServer["WebSocket Service (:8080)"]
+        WSS["WebSocket Server (ws)"]
+        RoomManager["Room & Participant Manager"]
+        CursorTracker["Live Cursor Broadcast Engine"]
+        SyncEngine["Shape Move & Create Broadcast"]
+    end
+
+    subgraph Database["Data Layer (Prisma ORM)"]
+        DB[(SQLite / PostgreSQL)]
+    end
+
+    UI --> Canvas
+    Canvas --> WSClient
+    UI --> Express
+    WSClient <-->|Bi-directional WS Events| WSS
+    Express --> AuthMiddleware
+    AuthMiddleware --> DB
+    WSS --> DB
+```
+
+---
+
+## 📂 Repository Structure
+
+```
+OneDraw/
+├── Frontend/                 # Next.js 15 frontend application
+│   ├── app/                  # App router pages (Landing, Signin, Signup, Whiteboard/[roomId])
+│   ├── Classes/              # Canvas engine (DrawHandler, OfflineDrawHandler, SignalingManager)
+│   ├── Components/           # UI components (Navbar, ToolBar, Whiteboard, ColorDrawer, Participants)
+│   ├── store/                # Jotai / React state atoms
+│   └── utils/                # API helpers (getShapes, userFetcher)
+├── backend/                  # Node.js + Express REST API
+│   ├── prisma/               # Prisma schema & migration files
+│   └── src/                  # Controllers, JWT middleware, routes & schemas
+├── WsServer/                 # Standalone WebSocket synchronization server
+│   ├── prisma/               # Shared Prisma schema
+│   └── src/                  # WebSocket connection, room broadcasting & cursor engine
+├── manifests/                # Kubernetes deployment manifests
+├── buildspec.yml             # AWS CodeBuild / ECR CI/CD pipeline
+└── package.json              # Workspace root scripts
+```
+
+---
+
+## 🚀 Quickstart Guide
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18.0.0 or higher recommended)
+- [npm](https://www.npmjs.com/) (v9.0.0 or higher)
+- [Git](https://git-scm.com/)
+
+---
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/SatvikPy/OneDraw.git
+cd OneDraw
+```
+
+---
+
+### 2. Configure Environment Variables
+
+Create the local environment files for each service:
+
+#### Backend (`backend/.env`):
+```env
+DATABASE_URL="file:../../dev.db"
+PORT=5000
+FRONTEND_URL="http://localhost:3000"
+```
+
+#### WebSocket Server (`WsServer/.env`):
+```env
+DATABASE_URL="file:../../dev.db"
+PORT=8080
+```
+
+#### Frontend (`Frontend/.env.local`):
+```env
+NEXT_PUBLIC_BACKEND_URL="http://localhost:5000/backend"
+NEXT_PUBLIC_WEBSOCKET_SERVER_URL="ws://localhost:8080"
+```
+
+---
+
+### 3. Install Dependencies & Initialize Database
+
+#### Step A: Backend
+```bash
+cd backend
+npm install
+npx prisma db push
+cd ..
+```
+
+#### Step B: WebSocket Server
+```bash
+cd WsServer
+npm install
+npx prisma generate
+cd ..
+```
+
+#### Step C: Frontend
+```bash
+cd Frontend
+npm install --legacy-peer-deps
+cd ..
+```
+
+---
+
+### 4. Start the Application
+
+You can start each service in separate terminal tabs:
+
+```bash
+# Terminal 1 - Backend API (Port 5000)
+npm run dev:backend
+
+# Terminal 2 - WebSocket Server (Port 8080)
+npm run dev:ws
+
+# Terminal 3 - Frontend Web App (Port 3000)
+npm run dev:frontend
+```
+
+Open **[http://localhost:3000](http://localhost:3000)** in your browser to start drawing and collaborating!
+
+---
+
+## 📡 API & WebSocket Protocols
+
+### REST Endpoints (`http://localhost:5000/backend`)
+
+| Method | Endpoint | Description | Auth Required |
+| :--- | :--- | :--- | :--- |
+| `POST` | `/signUp` | Register a new user account | No |
+| `POST` | `/signIn` | Authenticate user & receive JWT token | No |
+| `GET` | `/getUser/:userId` | Fetch user profile details | No |
+| `POST` | `/getUsers` | Batch query user details by ID array | No |
+| `POST` | `/createRoom` | Create or retrieve user whiteboard room | **Yes** (Bearer Token) |
+| `GET` | `/getRoom/:slug` | Retrieve room metadata by slug identifier | No |
+| `GET` | `/getMessages/:roomId` | Load persistent canvas shapes for a room | No |
+| `GET` | `/checkIfLocked/:shapeId` | Check and claim temporary lock on a shape | **Yes** (Bearer Token) |
+
+---
+
+### WebSocket Message Protocol (`ws://localhost:8080?token=<JWT>`)
+
+```json
+// Join Room
+{ "type": "joinRoom", "roomId": "room-uuid" }
+
+// Draw / Create Shape
+{ "type": "msg", "roomID": "room-uuid", "shape": { "id": "uuid", "type": "rect", "x": 100, "y": 100, ... } }
+
+// Move / Update Existing Shape
+{ "type": "move", "roomID": "room-uuid", "shape": { "id": "uuid", "x": 150, "y": 120 } }
+
+// Live Cursor Synchronization
+{ "type": "cursorMove", "roomId": "room-uuid", "x": 420, "y": 280 }
+
+// Leave Room
+{ "type": "leaveRoom", "roomId": "room-uuid" }
+```
+
+---
+
+## 🐳 Containerization & Deployment
+
+Each service contains a dedicated `Dockerfile` for containerized environments:
+
+```bash
+# Build Frontend
+docker build -t onedraw-frontend ./Frontend
+
+# Build Backend
+docker build -t onedraw-backend ./backend
+
+# Build WebSocket Server
+docker build -t onedraw-ws ./WsServer
+```
+
+Kubernetes manifests are ready in the [`manifests/`](./manifests) directory for deployment to AWS EKS or standard K8s clusters.
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'feat: Add AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more information.
+
+---
+
+## 👨‍💻 Author & Maintainer
+
+<div align="center">
+
+### **Satvik Sharma**
+*Full-Stack Engineer & Open Source Developer*
+
+[![GitHub](https://img.shields.io/badge/GitHub-SatvikPy-181717?style=for-the-badge&logo=github)](https://github.com/SatvikPy)
+[![Email](https://img.shields.io/badge/Email-satviksharma.bpl%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:satviksharma.bpl@gmail.com)
+
+*Made with ❤️ by Satvik Sharma*
+
+</div>
