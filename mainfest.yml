@@ -1,0 +1,76 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+        - name: backend
+          image: 717279689524.dkr.ecr.ap-south-1.amazonaws.com/backend:f6a5ade
+          ports:
+            - containerPort: 5000
+          volumeMounts:
+            - name: backend-env-volume
+              mountPath: /src/.env
+              subPath: .env
+      volumes:
+        - name: backend-env-volume
+          configMap:
+            name: backend-config
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+        - name: frontend
+          image: 717279689524.dkr.ecr.ap-south-1.amazonaws.com/frontend:2fcee13
+          ports:
+            - containerPort: 3000
+          volumeMounts:
+            - name: env-volume
+              mountPath: /app/.env
+              subPath: .env
+      volumes:
+        - name: env-volume
+          configMap:
+            name: frontend-config
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: websocket
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: websocket
+  template:
+    metadata:
+      labels:
+        app: websocket
+    spec:
+      containers:
+        - name: websocket
+          image: 717279689524.dkr.ecr.ap-south-1.amazonaws.com/websocket:f6a5add
+          ports:
+            - containerPort: 8080
+

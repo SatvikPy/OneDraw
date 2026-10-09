@@ -1,0 +1,11 @@
+{
+  "name": "onedraw",
+  "version": "1.0.0",
+  "private": true,
+  "description": "OneDraw - Collaborative Designing Tool",
+  "scripts": {
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:ws": "npm --prefix WsServer run dev",
+    "dev:frontend": "npm --prefix Frontend run dev"
+  }
+}

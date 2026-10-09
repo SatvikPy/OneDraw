@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Build and cache
+.next/
+*/.next/
+dist/
+*/dist/
+build/
+*.tsbuildinfo
+*/tsconfig.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+*/.env
+*/.env.local
+
+# Databases & logs
+*.db
+*.db-journal
+dev.db*
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# IDE & OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
