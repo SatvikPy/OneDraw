@@ -68,7 +68,7 @@ Node.js + TypeScript
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/Hemant2335/OneDraw.git
+   git clone https://github.com/SatvikPy/OneDraw.git
    cd OneDraw
    ```
 
